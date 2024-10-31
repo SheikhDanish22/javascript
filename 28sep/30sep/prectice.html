@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display(){
+
+            try{
+                let a= document.getElementById("demo1").value;
+                let b=document.getElementById("demo2").value;
+                if(isNaN(a) || isNaN(b)){
+                    throw "Not use string";
+                }
+                else{
+
+                }
+              if(b==0){
+                throw "not devided by value";
+              }
+              else{
+
+              let c=a/b;
+              document.getElementById("ans").innerHTML=c;
+
+              }
+            }
+            catch(error){
+                document.getElementById("ans").innerHTML=error;
+            }
+        }
+    
+    </script>
+</head>
+<body>
+    Enter number1 : <input type="text" id="demo1">
+    <br><br>
+    Enter number2 : <input type="text" id="demo2">
+    <br><br>
+    <button onclick="display()">Click here</button>
+    <h1 id="ans">my ans</h1>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let myw;
+        function mydata(){
+
+           myw=window.open("https://www.facebook.com/","","width=500,height=400")
+            
+        }
+        function myclose(){
+            myw.close();
+        }
+    </script>
+</head>
+<body bgcolor="yellow">
+    <!-- BOM -->
+     <a href="home.html">Home</a>
+     <a href="about.html">about</a>
+     <a href="service.html">service</a>
+     <a href="contect.html">contact</a>
+     <hr size="10" color="blue">
+     <h1>about page</h1>
+     <button onclick="mydata()">open new window</button>
+     <button onclick="myclose()">close your window</button>
+
+
+    
+</body>
+</html>

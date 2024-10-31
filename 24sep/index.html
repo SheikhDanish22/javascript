@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- <center>
+        <button id="btn1">Start</button>
+        <button id="btn2">Stop</button>
+        <button id="btn3">Clear</button>
+        <h1 id="ans">0</h1>
+    </center>
+    <script src="watch.js"></script> -->
+ 
+
+
+
+ <h1 id="demo">Welcome to Cybrom</h1>
+    <script>
+        var myInt;
+        function myFun(){
+            document.getElementById("demo").innerHTML+="Happy Bady To You";
+        }
+       myInt= setTimeout(myFun,5000);
+        function stopnow(){
+            clearTimeout(myInt);
+        }
+    </script>
+    <button onclick="stopnow()">stopnow</button>
+
+</body>
+</html>

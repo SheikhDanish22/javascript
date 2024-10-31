@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <button onclick="display()">click here</button>
+    <script>
+
+
+
+        function display(){
+            var a=23;
+            var b=25;
+            try{
+                document.getElementById("demo").innerHTML+= a + 'Division by '+ a + " by " + b +" = " + a/b;
+            }
+            catch(e){
+                alert("this is not  div ",e)
+            }
+        }
+    </script>
+</body>
+</html>
